@@ -77,3 +77,62 @@ export const theme = vsDark;
 ### Example: Using Local Variables
 
 ---
+
+<CodeSurfer>
+
+```js file=./src/ch6/Eg2.js title="Example: Using Local Variables"
+```
+
+```diff 8:18 subtitle="We want to refactoring these code by Extract Function, but they dependent on local variables"
+```
+
+```js file=./src/ch6/Eg2-1.js subtitle="Extract the code to a function"
+```
+
+```js file=./src/ch6/Eg2-2.js subtitle="Replace with that functin, and pass the arguments"
+```
+
+```js file=./src/ch6/Eg2-3.js subtitle="Extract the code to a function"
+```
+
+```js file=./src/ch6/Eg2-4.js subtitle="Replace with that functin, and pass the arguments"
+```
+
+```diff 8,9,18:31 subtitle="done"
+```
+
+</CodeSurfer>
+
+---
+
+### Example: Reassigning a Local Variable
+
+---
+
+<CodeSurfer>
+
+```js file=./src/ch6/Eg3.js title="Example: Reassigning a Local Variable"
+```
+
+```diff 2,4:7 subtitle="We want to refactoring these code by Extract Function, but there is a local variable reassigned"
+```
+
+```js file=./src/ch6/Eg3-1.js subtitle="slide the declaration"
+```
+
+```js file=./src/ch6/Eg3-2.js subtitle="Extract the code to a function"
+```
+
+```diff 40 subtitle="And remember to return the reassigned variable"
+```
+
+```js file=./src/ch6/Eg3-3.js
+```
+
+```js file=./src/ch6/Eg3-4.js subtitle="Change to a better name"
+```
+
+```diff 3,5[25:36],29:35 subtitle="done"
+```
+
+</CodeSurfer>
